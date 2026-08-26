@@ -41,3 +41,4 @@ Si deseas compilar el código LaTeX localmente:
 ```bash
 pdflatex cv.tex
 ```
+
