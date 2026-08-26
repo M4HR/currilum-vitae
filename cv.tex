@@ -1,0 +1,189 @@
+\documentclass[10pt, a4paper]{article}
+
+% Packages
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{amssymb}
+
+% Colors
+\definecolor{primary}{RGB}{16, 44, 87}       % #102C57 Dark blue for section headers
+\definecolor{textgray}{RGB}{60, 64, 72}     % #3C4048 Dark gray
+\definecolor{linkcolor}{RGB}{0, 110, 160}   % #006EA0 Blue link
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    pdftitle={CV - Manuel Angel Huertas Ramos},
+    pdfauthor={Manuel Angel Huertas Ramos}
+}
+
+% Section styling
+\titleformat{\section}
+  {\large\bfseries\color{primary}} % Format
+  {}                              % Label
+  {0em}                           % Sep
+  {}                              % Before-code
+  [\vspace{-0.5em}\rule{\linewidth}{0.5pt}\vspace{-0.3em}] % After-code rule
+
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% Custom itemize setup (square bullets)
+\setlist[itemize]{
+  label={\tiny\color{primary}$\blacksquare$},
+  leftmargin=1.2em,
+  labelsep=0.5em,
+  itemsep=0.15em,
+  parsep=0pt,
+  topsep=0.25em
+}
+
+% Custom commands
+\newcommand{\entryheader}[4]{%
+  \noindent\textbf{#1} \hfill \textbf{#2}\\
+  \noindent\textit{#3} \hfill \textit{#4}\par
+  \vspace{0.2em}
+}
+
+\newcommand{\certentry}[3]{%
+  \noindent\textbf{#1} \hfill \textit{#2 (#3)}\par
+  \vspace{0.2em}
+}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% ---------------- HEADER ----------------
+\begin{center}
+    {\Huge \scshape \color{primary} MANUEL ANGEL HUERTAS RAMOS}\\[0.4em]
+    {\small
+    \faPhone\ (51) 937-142-761 \quad$\cdot$\quad
+    \faEnvelope\ \href{mailto:huertasramosmanuelangel@gmail.com}{huertasramosmanuelangel@gmail.com} \quad$\cdot$\quad
+    \faMapMarker*\ Lima, Perú
+    }
+\end{center}
+
+\vspace{-0.3em}
+
+% ---------------- PERFIL PROFESIONAL ----------------
+\section{Perfil Profesional}
+Bachiller en Ingeniería Informática con experiencia en desarrollo de software, Inteligencia Artificial, análisis de datos y administración de infraestructura en la nube. Especializado en la arquitectura e integración de sistemas, procesamiento de datos con \textbf{Python, SQL, PySpark y Databricks}, despliegue de contenedores (Docker/VPS) y soluciones de IA. Enfocado en crear proyectos analíticos y tecnológicos escalables que impulsen la transformación digital en sectores de banca, servicios y RR.HH. Proactivo, analítico y adaptable.
+
+\vspace{0.3em}
+
+% ---------------- EXPERIENCIA LABORAL ----------------
+\section{Experiencia Laboral}
+
+\entryheader{Programador}{Mayo 2026 -- Agosto 2026}{SIO AI}{Lima, Perú}
+\begin{itemize}
+    \item \textbf{Desarrollo Asistido por IA:} Lideré e implementé soluciones de software utilizando herramientas de IA generativa para acelerar el ciclo de programación y optimizar la calidad del código.
+    \item \textbf{Análisis de Datos \& Integración SQL:} Diseñé consultas \textbf{SQL} e integración de datos para alimentar sistemas de IA generativa y la automatización de bots operacionales.
+    \item \textbf{Soluciones MDM y Automatización:} Participé en la arquitectura y programación de sistemas de gestión de dispositivos móviles (Mobile Device Management - MDM) personalizados.
+    \item \textbf{Logros:} Aceleré la entrega de módulos clave mediante programación asistida por IA e integré bots con ecosistemas complejos, optimizando la disponibilidad del servicio.
+\end{itemize}
+
+\vspace{0.4em}
+
+\entryheader{Analista IA}{Junio 2025 -- Febrero 2026}{Liderman}{Lima, Perú}
+\begin{itemize}
+    \item \textbf{Procesamiento de Datos \& IA:} Colaboré en el diseño e integración de servicios de IA, realizando la preparación, limpieza y procesamiento de datasets mediante \textbf{Python, SQL} y entornos analíticos con \textbf{Databricks / PySpark}.
+    \item \textbf{Infraestructura Cloud y Despliegues:} Gestioné el aprovisionamiento y despliegue de entornos en la nube en servidores VPS (AWS y Contabo), administrando contenedores para garantizar la estabilidad de las aplicaciones.
+    \item \textbf{Logros:} Optimicé los flujos de trabajo técnicos asegurando despliegues continuos y eficientes, garantizando alta disponibilidad y el uso óptimo de recursos en la nube.
+\end{itemize}
+
+\vspace{0.4em}
+
+\entryheader{Practicante TI}{Junio 2024 -- Octubre 2024}{Sociedad de Beneficencia de Lima}{Lima, Perú}
+\begin{itemize}
+    \item \textbf{Gestión de Datos \& Consultas SQL:} Realicé la validación, estructuración y carga masiva de información mediante consultas \textbf{SQL} en el sistema ERP institucional.
+    \item \textbf{Soporte Técnico e Infraestructura:} Brindé soporte técnico integral en infraestructura de redes, equipos de cómputo e impresoras, asegurando un entorno de trabajo funcional.
+    \item \textbf{Logros:} Optimicé la precisión operativa al identificar y corregir oportunamente inconsistencias en los módulos del ERP, reduciendo errores en la gestión de la información.
+\end{itemize}
+
+\newpage
+
+\entryheader{Soporte TI}{Marzo 2023 -- Junio 2023}{Telesto Development}{Lima, Perú}
+\begin{itemize}
+    \item \textbf{Mantenimiento y Soporte:} Ejecuté el mantenimiento preventivo y correctivo de hardware, instalación y configuración de sistemas operativos, asegurando el rendimiento de los equipos.
+    \item \textbf{Bases de Datos SQL \& Operaciones:} Ejecuté la corrección técnica de registros mediante \textbf{SQL} y la carga de bases de datos para sistemas de llamadas.
+    \item \textbf{Logros:} Mantuve la integridad de la información del negocio corrigiendo técnicamente registros en módulos ERP, mejorando la confiabilidad de los datos.
+\end{itemize}
+
+\vspace{0.4em}
+
+\entryheader{Desarrollador Full-Stack \& Admin Infraestructura}{Diciembre 2021}{KSPERU}{Lima, Perú}
+\begin{itemize}
+    \item \textbf{Virtualización de Servidores:} Lideré el aprovisionamiento y administración de infraestructura virtualizada con Proxmox, gestionando múltiples servidores.
+    \item \textbf{Servicios en Contenedores \& SQL:} Realicé el despliegue y mantenimiento de servicios críticos en contenedores (bases de datos \textbf{SQL}, plataformas Coder, correo y sistemas Evolution).
+    \item \textbf{Desarrollo a Medida:} Participé como desarrollador Full-Stack integrando aplicaciones a medida con la infraestructura de servidores.
+    \item \textbf{Logros:} Consolidé la infraestructura tecnológica al centralizar servicios en entornos virtualizados, mejorando alta disponibilidad, seguridad y escalabilidad operativa.
+\end{itemize}
+
+\vspace{0.3em}
+
+% ---------------- EDUCACIÓN ----------------
+\section{Educación}
+
+\noindent\textbf{Universidad San Ignacio de Loyola (USIL)} \hfill \textbf{Marzo 2019 -- Julio 2024}\\
+Ingeniería Informática y de Sistemas --- \textit{Bachiller}\par
+\vspace{0.4em}
+\noindent\textbf{Colegio Mayor Secundario Presidente Del Perú} \hfill \textbf{2017 -- 2018}\\
+Programa del Diploma del Bachillerato Internacional (IB)\par
+
+\vspace{0.3em}
+
+% ---------------- CERTIFICACIONES Y CURSOS ----------------
+\section{Certificaciones y Cursos}
+
+\certentry{CCNAv7: Switching, Routing, and Wireless Essentials}{Cisco Networking Academy}{2023}
+\certentry{IoT Fundamentals: Big Data \& Analytics}{Cisco Networking Academy}{2023}
+\certentry{CCNAv7: Introduction to Networks}{Cisco Networking Academy}{2022}
+
+\vspace{0.3em}
+
+% ---------------- COMPETENCIAS Y HABILIDADES ----------------
+\section{Competencias y Habilidades}
+
+\begin{multicols}{2}
+    \noindent\textbf{\color{primary}\faDatabase\quad Análisis \& Bases de Datos}\\[0.3em]
+    \begin{itemize}
+        \item \textbf{Bases de Datos \& Data:} SQL (PostgreSQL, MySQL), Python (Pandas, PySpark), Databricks, ETL.
+        \item \textbf{Desarrollo \& Software:} Full-Stack, APIs REST, Python, IA Generativa (Bots, Prompting).
+        \item \textbf{Cloud \& Infraestructura:} AWS, VPS (Contabo), Docker, Proxmox, Virtualización.
+        \item \textbf{Herramientas \& TI:} Control de Versiones (Git / GitHub), Redes (CCNA), ERPs y Soporte.
+    \end{itemize}
+
+    \columnbreak
+
+    \noindent\textbf{\color{primary}\faUsers\quad Habilidades Blandas}\\[0.3em]
+    \begin{itemize}
+        \item \textbf{Trabajo Colaborativo:} Integración ágil en equipos multidisciplinarios.
+        \item \textbf{Proactividad e Innovación:} Propuesta activa de soluciones de vanguardia.
+        \item \textbf{Capacidad Analítica:} Resolución de problemas complejos y diagnóstico.
+        \item \textbf{Adaptabilidad \& Liderazgo:} Aprendizaje continuo y gestión del tiempo.
+    \end{itemize}
+\end{multicols}
+
+\vspace{-0.3em}
+
+% ---------------- INFORMACIÓN ADICIONAL ----------------
+\section{Información Adicional}
+\begin{itemize}
+    \item \textbf{Idiomas:} Español (Nativo), Inglés (Intermedio -- B1).
+    \item \textbf{Comunidad Técnica:} Miembro activo de la comunidad \textbf{KSPERU}, enfocado en administración de servidores, desarrollo de proyectos e instrucción técnica.
+    \item \textbf{Voluntariado:} Voluntario en el diseño e implementación de soluciones tecnológicas para Organizaciones No Gubernamentales.
+    \item \textbf{Actividades Complementarias:} Integrante de una comunidad internacional de recreación histórica orientada a la investigación y trabajo en equipo; apasionado por la música.
+\end{itemize}
+
+\end{document}
