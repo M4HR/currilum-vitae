@@ -5,7 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[margin=1.05cm, top=0.85cm, bottom=0.85cm]{geometry}
+\usepackage[margin=0.95cm, top=0.75cm, bottom=0.75cm]{geometry}
 \usepackage{xcolor}
 \usepackage{titlesec}
 \usepackage{enumitem}
@@ -14,9 +14,9 @@
 \usepackage{amssymb}
 
 % Colors
-\definecolor{primary}{RGB}{16, 44, 87}       % #102C57 Dark blue
-\definecolor{textgray}{RGB}{60, 64, 72}     % #3C4048 Dark gray
-\definecolor{linkcolor}{RGB}{0, 95, 150}    % #005F96 Subtle blue link
+\definecolor{primary}{RGB}{16, 44, 87}       % Dark blue
+\definecolor{textgray}{RGB}{60, 64, 72}     % Dark gray
+\definecolor{linkcolor}{RGB}{0, 95, 150}    % Subtle blue link
 
 % Hyperref setup
 \hypersetup{
@@ -29,29 +29,29 @@
 
 % Section styling
 \titleformat{\section}
-  {\large\bfseries\color{primary}}
+  {\normalsize\bfseries\color{primary}}
   {}
   {0em}
   {}
-  [\vspace{-0.6em}\rule{\linewidth}{0.6pt}\vspace{-0.35em}]
+  [\vspace{-0.65em}\rule{\linewidth}{0.6pt}\vspace{-0.35em}]
 
-\titlespacing*{\section}{0pt}{5pt}{2.5pt}
+\titlespacing*{\section}{0pt}{4pt}{2pt}
 
 % Custom itemize setup
 \setlist[itemize]{
   label={\tiny\color{primary}$\blacksquare$},
-  leftmargin=1.1em,
-  labelsep=0.35em,
-  itemsep=0.02em,
+  leftmargin=1.05em,
+  labelsep=0.3em,
+  itemsep=0.01em,
   parsep=0pt,
-  topsep=0.1em
+  topsep=0.08em
 }
 
 % Custom commands
 \newcommand{\entryheader}[4]{%
   \noindent\textbf{#1} \hfill \textbf{#2}\\
   \noindent\textit{#3} \hfill \textit{#4}\par
-  \vspace{0.08em}
+  \vspace{0.05em}
 }
 
 \pagestyle{empty}
@@ -61,86 +61,69 @@
 % ---------------- HEADER ----------------
 \begin{center}
     {\LARGE \scshape \bfseries \color{primary} MANUEL ANGEL HUERTAS RAMOS}\\[0.15em]
-    {\small \textbf{\color{primary} FULL-STACK \& DATA/AI ENGINEER \quad$\cdot$\quad CLOUD \& SYSADMIN}}\\[0.25em]
-    {\small
+    {\small \textbf{\color{primary} FULL-STACK \& DATA/AI ENGINEER \quad$\cdot$\quad CLOUD \& SYSADMIN}}\\[0.2em]
+    {\footnotesize
     \faPhone\ (+51) 937 142 761 \quad$\cdot$\quad
     \faEnvelope\ \href{mailto:huertasramosmanuelangel@gmail.com}{huertasramosmanuelangel@gmail.com} \quad$\cdot$\quad
-    \faMapMarker*\ Pachacámac, Lima, Perú\\[0.15em]
+    \faMapMarker*\ Pachacámac, Lima, Perú\\[0.12em]
     \faLinkedin\ \href{https://www.linkedin.com/in/manuel-angel-huertas-ramos-7b588a196/}{linkedin.com/in/manuel-angel-huertas-ramos} \quad$\cdot$\quad
     \faGithub\ \href{https://github.com/M4HR}{github.com/M4HR}
     }
 \end{center}
 
-\vspace{-0.5em}
+\vspace{-0.55em}
 
 % ---------------- PERFIL PROFESIONAL ----------------
 \section{Perfil Profesional}
-\noindent Bachiller en Ingeniería Informática y de Sistemas con perfil híbrido en \textbf{Administración de Servidores / Cloud, Desarrollo Full-Stack y Análisis/Ingeniería de Datos e IA}. Especializado en diseño de arquitecturas contenerizadas (\textbf{Docker, Proxmox VE, VPS AWS/Contabo}), construcción de aplicaciones backend/APIs (\textbf{Python, FastAPI, SQL}) y pipelines analíticos (\textbf{Databricks, PySpark}). Experiencia probada en producción para clientes de banca, seguridad y telecomunicaciones con enfoque en alta disponibilidad y escalabilidad.
+\noindent Bachiller en Ingeniería Informática y de Sistemas con experiencia en \textbf{Administración de Servidores / Cloud, Desarrollo Full-Stack y Datos/IA}. Especializado en arquitecturas contenerizadas (\textbf{Docker, Proxmox VE, VPS AWS/Contabo}), APIs y backend (\textbf{Python, FastAPI, SQL}) y pipelines analíticos (\textbf{Databricks, PySpark}). Trayectoria probada diseñando e implementando sistemas ERP, plataformas de analítica/seguridad con IA y automatización documental para producción.
+
+% ---------------- PROYECTOS DESTACADOS & ARQUITECTURA DE SISTEMAS ----------------
+\section{Proyectos de Ingeniería \& Sistemas Desarrollados}
+\begin{itemize}
+    \item \textbf{Plataforma de Analítica \& Alertas con IA (Seguridad):} Diseñé e implementé sistema de procesamiento de datos en tiempo real que analiza flujos transaccionales y emite alertas automatizadas mediante modelos de IA y microservicios backend en Python/FastAPI.
+    \item \textbf{ERP Modular \& Gestión de Telecomunicaciones:} Arquitectura y desarrollo full-stack de sistema ERP multi-área para gestión de conexiones de red, aprovisionamiento de clientes, inventarios y facturación sobre PostgreSQL y Docker.
+    \item \textbf{Sistema de Automatización Documental \& Salud:} Construcción de motor de generación y firma automatizada de expedientes e informes clínicos con APIs seguras, reduciendo un 60\% el tiempo de emisión documental.
+    \item \textbf{Ecosistema EdTech \& Moodle:} Desarrollo de módulos personalizados para Moodle, automatización de control de asistencia biométrica y emisión/verificación criptográfica de certificados digitales.
+\end{itemize}
 
 % ---------------- EXPERIENCIA LABORAL ----------------
 \section{Experiencia Laboral}
 
 \entryheader{Programador / Desarrollador Full-Stack \& IA}{04/05/2026 -- 28/08/2026}{SIO AI}{Lima, Perú}
 \begin{itemize}
-    \item \textbf{IA Generativa \& Automatización:} Desarrollé e integré bots y agentes de IA con LLMs y APIs REST, automatizando más de \textbf{2,500 consultas operacionales diarias} y reduciendo tiempos de atención en un \textbf{45\%}.
-    \item \textbf{Arquitectura de Datos \& SQL:} Diseñé modelos y consultas complejas en \textbf{SQL/PostgreSQL} para alimentar sistemas de IA en tiempo real y reportería analítica.
-    \item \textbf{Plataforma MDM:} Participé en la arquitectura y desarrollo de una plataforma \textbf{MDM} personalizada para la gestión, control y aprovisionamiento remoto de más de \textbf{300 dispositivos móviles}.
+    \item \textbf{IA \& Backend:} Desarrollé agentes/bots de IA y APIs con LLMs, automatizando \textbf{+2,500 consultas/día} con \textbf{45\%} menos tiempo de espera.
+    \item \textbf{MDM \& SQL:} Participé en la arquitectura de plataforma MDM para gestión remota de \textbf{+300 dispositivos móviles} y consultas SQL analíticas.
 \end{itemize}
 
-\vspace{0.15em}
+\vspace{0.1em}
 
 \entryheader{Analista de Datos \& IA}{02/06/2025 -- 27/02/2026}{Liderman}{Lima, Perú}
 \begin{itemize}
-    \item \textbf{Data Engineering \& Pipelines:} Construí pipelines ETL con \textbf{Python, Databricks y PySpark} para limpieza, modelado y procesamiento de \textbf{+500,000 registros transaccionales diarios}.
-    \item \textbf{Cloud \& SysAdmin:} Aprovisioné y administré entornos de producción en servidores VPS (\textbf{AWS y Contabo}) mediante contenedores \textbf{Docker}, garantizando un uptime del \textbf{99.9\%} y optimizando costos de infraestructura.
+    \item \textbf{Pipelines \& Cloud:} Construí ETLs con \textbf{Python, Databricks y PySpark} para \textbf{+500K registros diarios}. Administré VPS (\textbf{AWS/Contabo}) con Docker logrando \textbf{99.9\% uptime}.
 \end{itemize}
 
-\vspace{0.15em}
+\vspace{0.1em}
 
 \entryheader{Practicante TI \& Base de Datos}{03/06/2024 -- 25/10/2024}{Sociedad de Beneficencia de Lima}{Lima, Perú}
 \begin{itemize}
-    \item \textbf{Gestión de Datos ERP \& SQL:} Ejecuté validación, migración y carga masiva de \textbf{+100,000 registros} en el ERP institucional mediante scripts SQL avanzados, reduciendo discrepancias de información en un \textbf{40\%}.
-    \item \textbf{Infraestructura y Conectividad:} Soporte técnico integral a redes y servidores locales, asegurando la continuidad operativa del personal.
+    \item \textbf{ERP Institucional \& Redes:} Migración y estructuración masiva de \textbf{+100K registros} con SQL, reduciendo un \textbf{40\%} inconsistencias operativas.
 \end{itemize}
 
-\vspace{0.15em}
+\vspace{0.1em}
 
 \entryheader{Consultor Full-Stack \& SysAdmin}{06/12/2021 -- Presente}{KSPERU (Consultoría)}{Lima, Perú}
 \begin{itemize}
-    \item \textbf{Virtualización con Proxmox VE:} Diseñé e implementé clústeres de servidores virtualizados en \textbf{Linux (Debian/Ubuntu)}, optimizando el consumo de hardware y garantizando aislamiento y seguridad.
-    \item \textbf{Microservicios \& Contenedores:} Desplegué más de \textbf{30 servicios y aplicaciones contenerizadas} con \textbf{Docker} (PostgreSQL, MySQL, Coder, correo corporativo y APIs a medida) para múltiples clientes.
+    \item \textbf{Virtualización \& Docker:} Aprovisioné clústeres en \textbf{Proxmox VE (Debian/Ubuntu)} y desplegué \textbf{+30 servicios contenerizados} (PostgreSQL, APIs, Coder).
 \end{itemize}
 
-\vspace{0.15em}
-
-\entryheader{Soporte TI \& Base de Datos}{06/03/2023 -- 30/06/2023}{Telesto Development}{Lima, Perú}
+% ---------------- COMPETENCIAS TÉCNICAS & EDUCACIÓN ----------------
+\section{Competencias Técnicas \& Formación}
 \begin{itemize}
-    \item \textbf{Depuración de Datos SQL:} Corrección técnica y estructuración de bases de datos para plataformas de contact center, mejorando la integridad transaccional de llamadas y registros.
-\end{itemize}
-
-% ---------------- COMPETENCIAS TÉCNICAS ----------------
-\section{Competencias Técnicas}
-\begin{itemize}
-    \item \textbf{Servidores, Cloud \& DevOps:} Proxmox VE, Docker, AWS, VPS (Contabo), Linux (Debian/Ubuntu, Bash), Redes (CCNAv7), CI/CD.
-    \item \textbf{Desarrollo Full-Stack \& Backend:} Python, FastAPI, Flask, JavaScript, APIs REST, Git/GitHub, Arquitectura de Microservicios.
-    \item \textbf{Datos \& Inteligencia Artificial:} SQL (PostgreSQL, MySQL), Databricks, PySpark, Pandas, Pipelines ETL, Agentes LLM / GenAI.
-\end{itemize}
-
-% ---------------- EDUCACIÓN Y CERTIFICACIONES ----------------
-\section{Educación y Certificaciones}
-
-\noindent\textbf{Universidad San Ignacio de Loyola (USIL)} \hfill \textbf{04/03/2019 -- 26/07/2024}\\
-Bachiller en Ingeniería Informática y de Sistemas \hfill \textit{Lima, Perú}\par
-
-\vspace{0.15em}
-
-\noindent\textbf{Certificaciones Cisco Networking Academy:} IoT Fundamentals: Big Data \& Analytics (2023), CCNAv7: Switching, Routing, and Wireless Essentials (2023), CCNAv7: Introduction to Networks (2022).
-
-% ---------------- INFORMACIÓN ADICIONAL ----------------
-\section{Información Adicional}
-\begin{itemize}
-    \item \textbf{Idiomas:} Español (Nativo), Inglés (Intermedio -- B1 / Lectura y documentación técnica fluida).
-    \item \textbf{Comunidad Técnica:} Instructor y administrador de infraestructura en la comunidad \textbf{KSPERU}.
+    \item \textbf{Servidores, Cloud \& DevOps:} Proxmox VE, Docker, AWS, VPS Contabo, Linux (Debian/Ubuntu, Bash), Redes (CCNAv7).
+    \item \textbf{Desarrollo Full-Stack \& IA:} Python (FastAPI, Flask), SQL (PostgreSQL, MySQL), JavaScript, Databricks, PySpark, Agentes LLM.
+    \item \textbf{Educación:} Bachiller en Ing. Informática y de Sistemas -- \textbf{Universidad San Ignacio de Loyola (USIL)} (2019 -- 2024).
+    \item \textbf{Certificaciones Cisco:} CCNAv7 (Switching, Routing, Networks) $\cdot$ IoT Fundamentals: Big Data \& Analytics.
+    \item \textbf{Idiomas \& Comunidad:} Español (Nativo), Inglés (Intermedio -- B1 técnico) $\cdot$ Instructor en comunidad técnica \textbf{KSPERU}.
 \end{itemize}
 
 \end{document}
